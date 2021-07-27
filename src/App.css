@@ -7,6 +7,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -27,6 +28,11 @@ body{
 }
 .btn:hover{
   color: var(--secondary-color);
+}
+.btn-block{
+  display: block;
+  width: 100%;
+
 }
 
 /*navbar styles*/
@@ -84,4 +90,23 @@ body{
 .searchbar__form >input:focus{
   border: 1px solid var(--secondary-color);
   box-shadow: 0 0 1px 1px rgba(60, 148, 139, 0.5);
+}
+/*Alert styles*/
+.alert{
+  padding: 10px 17px;
+  font-size: 20px;
+  border: 1px solid var(--dark-color);
+  margin: 1rem 0;
+}
+.alert-warning{
+  background: #f8ffc4;
+  border:1px solid #ffee00 ;
+}
+.alert-danger{
+  background: #ffc4c4;
+  border:1px solid#ff0000;
+}
+.alert-info{
+  background: #d7eafa;
+  border:1px solid #0523b7;
 }
